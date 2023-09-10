@@ -26,6 +26,7 @@ export default function Home() {
           Here&apos;s a basic starter to show navigating from one screen to
           another.
         </Paragraph>
+        <Paragraph textAlign="center">Afire Test Edit</Paragraph>
       </YStack>
 
       <YStack space="$2.5">

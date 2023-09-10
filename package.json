@@ -9,6 +9,7 @@
     "tamagui-start-web": " cross-env TAMAGUI_TARGET=web expo start -c",
     "tamagui-android": "cross-env TAMAGUI_TARGET=native yarn expo run:android",
     "tamagui-ios": "cross-env TAMAGUI_TARGET=native yarn expo run:ios",
+    "reset": "yarn start -- --reset-cache",
     "upgrade:tamagui": "$npm_execpath up '*tamagui*' '@tamagui/*'"
   },
   "dependencies": {
