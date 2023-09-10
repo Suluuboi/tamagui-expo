@@ -3,10 +3,12 @@
   "version": "3.3.5",
   "main": "expo-router/entry",
   "scripts": {
-    "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
-    "web": "expo start --web",
+    "start": "cross-env TAMAGUI_TARGET=native expo start",
+    "web": "cross-env TAMAGUI_TARGET=web expo start --web",
+    "tamagui-start-native": "cross-env TAMAGUI_TARGET=native expo start -c",
+    "tamagui-start-web": " cross-env TAMAGUI_TARGET=web expo start -c",
+    "tamagui-android": "cross-env TAMAGUI_TARGET=native yarn expo run:android",
+    "tamagui-ios": "cross-env TAMAGUI_TARGET=native yarn expo run:ios",
     "upgrade:tamagui": "$npm_execpath up '*tamagui*' '@tamagui/*'"
   },
   "dependencies": {
