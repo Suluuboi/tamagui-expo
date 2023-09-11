@@ -33,7 +33,9 @@ export default function Home() {
         <Button onPress={() => router.push("/users/testuser")}>
           Go to user page
         </Button>
-        <Button onPress={() => router.push("/tabs")}>Go to tabs page</Button>
+        <Button onPress={() => router.push("/tabs/tab1")}>
+          Go to tabs page
+        </Button>
       </YStack>
 
       <YStack space="$5">
